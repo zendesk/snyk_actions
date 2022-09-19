@@ -15,7 +15,7 @@ inputs:
     default: false
 runs:
   using: "docker"
-  image: "docker://snyk/snyk:dotnet"
+  image: "docker://docker.pkg.github.com/zendesk/dockerhub-images/snyk:dotnet"
   env:
     FORCE_COLOR: 2
     SNYK_INTEGRATION_NAME: GITHUB_ACTIONS

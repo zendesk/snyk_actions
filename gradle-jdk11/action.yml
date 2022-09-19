@@ -15,7 +15,7 @@ inputs:
     default: false
 runs:
   using: "docker"
-  image: "docker://snyk/snyk:gradle-jdk11"
+  image: "docker://docker.pkg.github.com/zendesk/dockerhub-images/snyk:gradle-jdk11"
   env:
     FORCE_COLOR: 2
     SNYK_INTEGRATION_NAME: GITHUB_ACTIONS
