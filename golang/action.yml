@@ -15,7 +15,7 @@ inputs:
     default: false
 runs:
   using: "docker"
-  image: "docker://docker.pkg.github.com/zendesk/dockerhub-images/snyk:golang"
+  image: "docker://snyk/snyk:golang"
   env:
     FORCE_COLOR: 2
     SNYK_INTEGRATION_NAME: GITHUB_ACTIONS
@@ -23,4 +23,4 @@ runs:
   args:
   - snyk
   - ${{ inputs.command }}
-  - ${{ inputs.args }}
+  - ${{ inputs.args }} 

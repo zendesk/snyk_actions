@@ -20,7 +20,7 @@ inputs:
     default: true
 runs:
   using: "docker"
-  image: "docker://docker.pkg.github.com/zendesk/dockerhub-images/snyk:docker"
+  image: "docker://snyk/snyk:docker"
   env:
     SNYK_INTEGRATION_NAME: GITHUB_ACTIONS
     SNYK_INTEGRATION_VERSION: docker
